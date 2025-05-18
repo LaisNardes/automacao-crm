@@ -25,8 +25,8 @@ pyautogui.click(x=1029, y=610)
 # Clicar no campo buscar en todo
 pyautogui.click(x=610, y=605)
 
-# Entraria a condição de colar o nome do item ou o OEM vindo do resultado da pesquisa
-termo_busca = "9635254180"  # Termo de busca
+# Entraria a condição de colar o Código que vem da lista do excel 
+termo_busca = "9635254180"  
 pyautogui.write(termo_busca)
 pyautogui.press("enter")
 
@@ -37,17 +37,17 @@ pyautogui.doubleClick(x=904, y=970)
 pyautogui.press("backspace")
 
 time.sleep(1)
-# Puxar o resultado de preço do web scraping
+
 resultado = web_scraper.buscar_produtos(termo_busca)
 
-# Colar o resultado de preço no campo do CRM
+
 if resultado is not None:
     try:
-        # Converte a string JSON para um objeto Python
+        
         data = json.loads(resultado)
-        # Extrai o valor do preço do primeiro item da lista
+        
         preco = data[0]['preco']
-        # Escreve apenas o valor do preço
+        
         pyautogui.write(str(preco))
     except (json.JSONDecodeError, KeyError, IndexError) as e:
         print(f"Erro ao processar o resultado: {e}")

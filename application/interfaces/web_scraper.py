@@ -84,9 +84,11 @@ def buscar_produtos(termo_pesquisa):
         driver.quit()
 
 if __name__ == "__main__":
+    #O dado precisa vir dinamico da lista determinada do excel do outro arquivo. 
+    #Aplicar a condiçao de buscar o produto, segundo a coluna Código do excel + se o produto tem OEM, fazer a pesquisa no ecoparts pelo OEM. Caso nao, 
     termo = "9635254180"
     resultado = buscar_produtos(termo)
-    print("\nResultado finalaaaaa:")
+    print("\nResultado final:")
     print(resultado)
 
     
