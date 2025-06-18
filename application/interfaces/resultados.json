@@ -1,34 +1,40 @@
 [
   {
-    "Código": "2363060",
-    "Descripción": "SERVOFRENO",
-    "OEM": "9635254180",
-    "PVP IVA": 0.0,
+    "Código": "2362820",
+    "Código vehículo": "3149",
+    "Descripción": "CREMALLERA DIRECCION 406 modelo peugeot",
     "Marca": "PEUGEOT",
     "Modelo": "406 (8B) 2.0 HDI 110 (1998 - 2001) 1997CCM 109CV 80KW  5P",
     "Modelo_Limpo": "406",
+    "OEM": null,
+    "PVP IVA": 0,
+    "preco_scraping": 23.96,
+    "resultado_scraping": [
+      {
+        "nome": "CREMALLERA DIRECCION PEUGEOT 406 BERLINA (S1/S2) 1.9 Turbodiesel",
+        "preco": 23.96,
+        "link": "https://ecooparts.com/recambios-automovil-segunda-mano/?pag=pro&busval=fGZhcm8qaXpxdWVyZG98bmluZ3Vub3xwcm9kdWN0b3wtMXwwfDB8MHwwfHwwfDB8MHww&filval=&panu=MQ==&tebu=Q1JFTUFMTEVSQSpESVJFQ0NJT04qNDA2Km1vZGVsbypwZXVnZW90&ord=bmluZ3Vubw==&valo=LTE=&ubic=&toen=c3pic2t1Nm4wZ2F1dmd1cjVmb2Nr&veid=MA==&qregx=MzA=&tmin=MQ==&ttseu=&txbu=Q1JFTUFMTEVSQSpESVJFQ0NJT04qNDA2Km1vZGVsbypwZXVnZW90&ivevh=&ivevhmat=&ivevhsel=&ivevhcsver=&ivevhse=&oem=&vin="
+      }
+    ],
+    "link_scraping": "https://ecooparts.com/recambios-automovil-segunda-mano/?pag=pro&busval=fGZhcm8qaXpxdWVyZG98bmluZ3Vub3xwcm9kdWN0b3wtMXwwfDB8MHwwfHwwfDB8MHww&filval=&panu=MQ==&tebu=Q1JFTUFMTEVSQSpESVJFQ0NJT04qNDA2Km1vZGVsbypwZXVnZW90&ord=bmluZ3Vubw==&valo=LTE=&ubic=&toen=c3pic2t1Nm4wZ2F1dmd1cjVmb2Nr&veid=MA==&qregx=MzA=&tmin=MQ==&ttseu=&txbu=Q1JFTUFMTEVSQSpESVJFQ0NJT04qNDA2Km1vZGVsbypwZXVnZW90&ivevh=&ivevhmat=&ivevhsel=&ivevhcsver=&ivevhse=&oem=&vin="
+  },
+  {
+    "Código": "2363060",
     "Código vehículo": "3149",
+    "Descripción": "SERVOFRENO",
+    "Marca": "PEUGEOT",
+    "Modelo": "406 (8B) 2.0 HDI 110 (1998 - 2001) 1997CCM 109CV 80KW  5P",
+    "Modelo_Limpo": "406",
+    "OEM": "9635254180",
+    "PVP IVA": 0,
+    "preco_scraping": 33.88,
     "resultado_scraping": [
       {
         "nome": "SERVOFRENO PEUGEOT 406, 1999.03 - 2004.05 FACELIFT 2.0 HDI 110 80KW 1998.06 - 2001.08",
-        "preco": 28.0
+        "preco": 33.88,
+        "link": "https://ecooparts.com/recambios-automovil-segunda-mano/?pag=pro&busval=fGZhcm8qaXpxdWVyZG98bmluZ3Vub3xwcm9kdWN0b3wtMXwwfDB8MHwwfHwwfDB8MHww&filval=&panu=MQ==&tebu=OTYzNTI1NDE4MA==&ord=bmluZ3Vubw==&valo=LTE=&ubic=&toen=c3pic2t1Nm4wZ2F1dmd1cjVmb2Nr&veid=MA==&qregx=MzA=&tmin=MQ==&ttseu=&txbu=OTYzNTI1NDE4MA==&ivevh=&ivevhmat=&ivevhsel=&ivevhcsver=&ivevhse=&oem=&vin="
       }
-    ]
-  },
-  {
-    "Código": "2362820",
-    "Descripción": "CREMALLERA DIRECCION",
-    "OEM": null,
-    "PVP IVA": 0.0,
-    "Marca": "PEUGEOT",
-    "Modelo": "406 (8B) 2.0 HDI 110 (1998 - 2001) 1997CCM 109CV 80KW  5P",
-    "Modelo_Limpo": "406",
-    "Código vehículo": "3149",
-    "resultado_scraping": [
-      {
-        "nome": "CREMALLERA DIRECCION CITROEN C4 PICASSO II 2.0 BlueHDi 135",
-        "preco": 11.12
-      }
-    ]
+    ],
+    "link_scraping": "https://ecooparts.com/recambios-automovil-segunda-mano/?pag=pro&busval=fGZhcm8qaXpxdWVyZG98bmluZ3Vub3xwcm9kdWN0b3wtMXwwfDB8MHwwfHwwfDB8MHww&filval=&panu=MQ==&tebu=OTYzNTI1NDE4MA==&ord=bmluZ3Vubw==&valo=LTE=&ubic=&toen=c3pic2t1Nm4wZ2F1dmd1cjVmb2Nr&veid=MA==&qregx=MzA=&tmin=MQ==&ttseu=&txbu=OTYzNTI1NDE4MA==&ivevh=&ivevhmat=&ivevhsel=&ivevhcsver=&ivevhse=&oem=&vin="
   }
 ]

@@ -77,11 +77,14 @@ def buscar_produtos(termo_pesquisa):
                     continue
 
             if nome and preco is not None:
-                produtos.append({'nome': nome, 'preco': preco})
+                produtos.append({'nome': nome, 'preco': preco, 'link': url})  # <-- ADICIONA O LINK DA PESQUISA
 
         if produtos:
             produtos_ordenados = sorted(produtos, key=lambda x: x['preco'])[:4]
             produtos_filtrados = filtrar_por_media_ou_menor(produtos_ordenados)
+            # Garante que o campo 'link' está presente no(s) resultado(s) filtrado(s)
+            for p in produtos_filtrados:
+                p['link'] = url
             return json.dumps(produtos_filtrados, ensure_ascii=False, indent=2)
         else:
             print(f"Nenhum produto encontrado para OEM: {termo_pesquisa}")

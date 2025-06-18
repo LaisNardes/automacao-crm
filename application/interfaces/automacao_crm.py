@@ -4,6 +4,9 @@ import os
 import pyautogui
 from web_scraper import buscar_produtos
 
+pyautogui.FAILSAFE = True
+
+
 def executar_automacao_para_item(item, log_list=None):
     """Executa a automação para um único item do JSON"""
     def log(msg):
@@ -21,13 +24,13 @@ def executar_automacao_para_item(item, log_list=None):
     # --- CONFIGURAÇÕES GERAIS ---
     pyautogui.PAUSE = 0.5
 
-    # Clicar no campo Almacenada
-    log("Clicando no campo Almacenada...")
-    pyautogui.click(x=1029, y=610)
+    #Clicar no campo Almacenada
+    # log("Clicando no campo Almacenada...")    
+    # pyautogui.click(x=710, y=314)
 
     # Clicar no campo buscar en todo
     log("Clicando no campo buscar en todo...")
-    pyautogui.click(x=610, y=605)
+    pyautogui.click(x=358, y=244)
 
     # Usar o código do item como termo de busca
     termo_busca = item['Código']
@@ -37,18 +40,24 @@ def executar_automacao_para_item(item, log_list=None):
 
     # Aguardar carregamento dos resultados
     log("Aguardando carregamento dos resultados...")
-    time.sleep(1)
+    time.sleep(2.5)
 
-    # Clicar no resultado
-    log("Clicando no resultado...")
-    pyautogui.doubleClick(x=781, y=761)
+   
+ # Clicar no resultado
+    log("Clicando no resultado...") 
+    time.sleep(1)
+    pyautogui.click(x=300, y=383)
+    pyautogui.doubleClick(x=415, y=384)
 
     # Aguardar abertura do item
     time.sleep(2)
 
+    pyautogui.press("tab")
+    pyautogui.press("enter")
+
     # Clicar no campo de preço
     log("Clicando no campo de preço...")
-    pyautogui.doubleClick(x=904, y=970)
+    pyautogui.doubleClick(x=591, y=612)
 
     # Limpar o campo
     pyautogui.press("backspace")
@@ -111,6 +120,8 @@ def executar_automacao_para_item(item, log_list=None):
     pyautogui.press("esc")
     time.sleep(0.5)
     pyautogui.press("enter")
+    pyautogui.doubleClick(x=358, y=244)
+    pyautogui.press("backspace")
 
     # Aguardar 5 segundos antes do próximo item
     log(f"Item {item['Código']} processado com sucesso!")
@@ -171,3 +182,5 @@ def processar_resultados_json(arquivo='resultados.json'):
 if __name__ == "__main__":
     sucesso, log = processar_resultados_json()
     print(f"Automação finalizada com sucesso: {sucesso}")
+
+    
